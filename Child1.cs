@@ -1,7 +1,15 @@
-﻿*
-!Child1.cs
-!Child2.cs
-!Child3.cs
-!Interface1.cs
-!ParentClass.cs
-!Program.cs
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _08_Exception
+{
+    class Child1
+    {
+
+        int a =8;
+
+    }
+}

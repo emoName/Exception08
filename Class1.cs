@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace _08_Exception
 {
-    class Child1 
+    class Class1
     {
-
-        int k= Help.b;
-
+        int k = Help.c;
         public void SomeMethod()
         {
-            var a = new Class1();
+            var a = new Class2();
+
 
             a.SomeMethod();
         }
 
+        
 
 
         public void Method3()
@@ -25,26 +25,25 @@ namespace _08_Exception
             try
             {
               
-                var a = new Class1();
+                var a = new Class2();
                 a.Method3();
             }
             catch (Exception) when (k == 0)
             {
-                Help.b++;
+                Help.c++;
                 throw;
             }
             catch (Exception e) when (k == 1)
             {
-                Help.b++;
+                Help.c++;
                 throw e;
             }
 
             catch (Exception e) when (k == 2)
             {
-                Help.b++;
+                Help.c++;
                 throw new Exception("<====>  3  <====>", e);
             }
         }
-
     }
 }

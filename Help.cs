@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace _08_Exception
 {
-    interface Interface1
+  static  class Help
     {
+        public static int a = 0;
+        public static int b = 0;
+        public static int c = 0;
     }
 }
